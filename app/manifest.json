@@ -1,0 +1,29 @@
+{
+  "name": "今野ぽた",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "今野ぽた",
+  "icons": {
+    "16": "icons/potayan16.png",
+    "48": "icons/potayan48.png",
+    "128": "icons/potayan128.png"
+  },
+  "background": {
+    "scripts": ["src/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["potayan.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/potayan48.png",
+    "default_popup": "views/popup.html"
+  },
+  "web_accessible_resources": ["icons/*.png"],
+  "permissions": [
+    "tabs"
+  ]
+}

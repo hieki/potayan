@@ -1,0 +1,14 @@
+{
+  "name": "potayan",
+  "version": "0.0.1",
+  "scripts": {
+    "eslint": "eslint -c .eslintrc.json \"./app/**/*.js\"",
+    "eslint-fix": "eslint --fix -c .eslintrc.json \"./app/**/*.js\"",
+    "zip": "bestzip .build/potayan.zip app/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "bestzip": "^2.1.4",
+    "eslint": "^6.0.1"
+  }
+}
