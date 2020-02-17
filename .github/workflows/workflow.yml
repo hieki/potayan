@@ -1,0 +1,11 @@
+name: 'potayan'
+on: push
+jobs:
+  potayan:
+    name: 'Potayan'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v1
+      - name: 'Echo'
+        run: 'echo potayan'
